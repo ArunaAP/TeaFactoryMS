@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "concurrently",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"cd backend && nodemon server.js\" \"cd frontend && npm start\""
-  },
+"scripts": {
+  "build": "cd frontend && npm install && npm run build",
+  "start": "node backend/server.js"
+},
+"engines": {
+  "node": "14.x"
+},
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NamalTharindu97/Tea-Factory.git"
@@ -18,10 +22,6 @@
   },
   "homepage": "https://github.com/NamalTharindu97/Tea-Factory#readme",
   "dependencies": {
-    "concurrently": "^8.0.1",
-    "@material-ui/core": "^4.12.4",
-    "jspdf": "^2.5.1",
-    "jspdf-autotable": "^3.5.28"
-
+    "concurrently": "^8.0.1"
   }
 }
