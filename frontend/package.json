@@ -4,6 +4,7 @@
   "proxy": "http://localhost:5000/api/v1/tea-factory",
   "private": true,
   "dependencies": {
+    "@types/react": "18.2.7",
     "@cfaester/enzyme-adapter-react-18": "^0.7.0",
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
